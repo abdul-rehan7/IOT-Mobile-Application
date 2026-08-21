@@ -1,0 +1,65 @@
+{
+  "device_id": "esp32-s3-01",
+  "sensors": [
+    {
+      "id": "flow_01",
+      "key": "flow_rate",
+      "name": "Flow Rate",
+      "unit": "L/min",
+      "type": "flow",
+      "tab": "flow",
+      "status": "active",
+      "icon": "water_drop",
+      "accent": "primary",
+      "precision": 1,
+      "sim": { "base": 12.0, "jitter": 0.6, "min": 8.0, "max": 18.0 }
+    },
+    {
+      "id": "flow_total",
+      "key": "total_volume",
+      "name": "Total Dispensed",
+      "unit": "L",
+      "type": "total",
+      "tab": "flow",
+      "status": "active",
+      "icon": "straighten",
+      "accent": "primary",
+      "precision": 1
+    },
+    {
+      "id": "pressure_tab_01",
+      "key": "pressure_gauge",
+      "name": "Tank Level (Pressure)",
+      "unit": "kPa",
+      "type": "gauge",
+      "tab": "pressure",
+      "status": "coming_soon",
+      "icon": "speed",
+      "accent": "primary"
+    },
+    {
+      "id": "tds_tab_01",
+      "key": "tds_value",
+      "name": "TDS",
+      "unit": "ppm",
+      "type": "numeric",
+      "tab": "tds",
+      "status": "coming_soon",
+      "icon": "science",
+      "accent": "secondary"
+    },
+    {
+      "id": "temp_01",
+      "key": "temperature",
+      "name": "Temperature",
+      "unit": "°C",
+      "type": "numeric",
+      "tab": "temperature",
+      "status": "active",
+      "icon": "thermostat",
+      "accent": "error",
+      "precision": 1,
+      "sim": { "base": 24.5, "jitter": 0.4, "min": 18.0, "max": 32.0 }
+    }
+  ]
+}
